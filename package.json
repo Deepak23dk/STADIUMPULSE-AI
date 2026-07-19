@@ -9,7 +9,7 @@
     "dev:backend": "npm run start --prefix backend",
     "dev:frontend": "npm run dev --prefix frontend",
     "build:frontend": "npm run build --prefix frontend",
-    "build:prod": "npm run build:frontend && xcopy /E /I /Y frontend\\dist backend\\frontend\\dist",
+    "build:prod": "npm run build:frontend && node copyDist.js",
     "start": "npm run start --prefix backend",
     "test": "npm run test --prefix backend"
   }
