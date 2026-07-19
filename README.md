@@ -4,6 +4,8 @@ StadiumPulse AI is a dual-sided GenAI copilot designed for a World Cup 2026 stad
 
 This is a fully working, deployable submission for the GenAI Hackathon Challenge.
 
+**Live Demo**: [https://stadiumpulse-ai-production.up.railway.app/](https://stadiumpulse-ai-production.up.railway.app/)
+
 ---
 
 ## 🏟️ Product Concept & Core Features
