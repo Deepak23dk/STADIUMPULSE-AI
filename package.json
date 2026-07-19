@@ -1,0 +1,16 @@
+{
+  "name": "stadiumpulse-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:backend": "npm install --prefix backend",
+    "install:frontend": "npm install --prefix frontend",
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "dev:backend": "npm run start --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "build:frontend": "npm run build --prefix frontend",
+    "build:prod": "npm run build:frontend && xcopy /E /I /Y frontend\\dist backend\\frontend\\dist",
+    "start": "npm run start --prefix backend",
+    "test": "npm run test --prefix backend"
+  }
+}

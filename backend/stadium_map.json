@@ -1,0 +1,38 @@
+{
+  "stadium": {
+    "name": "MetLife Stadium",
+    "city": "East Rutherford, NJ",
+    "capacity": 82500,
+    "gates": [
+      { "id": "A", "name": "Gate A (MetLife Gate)", "sections": [101, 102, 103, 104, 105, 106, 107, 108, 143, 144, 201, 202, 203, 204, 243, 244] },
+      { "id": "B", "name": "Gate B (Verizon Gate)", "sections": [109, 110, 111, 112, 113, 114, 115, 116, 205, 206, 207, 208, 209, 210, 211, 212] },
+      { "id": "C", "name": "Gate C (HCLTech Gate)", "sections": [117, 118, 119, 120, 121, 122, 123, 124, 213, 214, 215, 216, 217, 218, 219, 220] },
+      { "id": "D", "name": "Gate D (Bud Light Gate)", "sections": [125, 126, 127, 128, 129, 130, 131, 132, 221, 222, 223, 224, 225, 226, 227, 228] },
+      { "id": "E", "name": "Gate E (Pepsi Gate)", "sections": [133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242] }
+    ],
+    "concessions": [
+      { "id": "c1", "name": "World Cup Burgers & Fries", "type": "Food", "cuisine": "American", "location": "Section 104", "menu": ["Classic Burger", "Cheese Burger", "French Fries", "Soft Drinks"] },
+      { "id": "c2", "name": "El Tri Tacos", "type": "Food", "cuisine": "Mexican", "location": "Section 114", "menu": ["Beef Tacos", "Chicken Tacos", "Nachos", "Churros", "Aguas Frescas"] },
+      { "id": "c3", "name": "Maple Leaf Poutine & Hotdogs", "type": "Food", "cuisine": "Canadian", "location": "Section 124", "menu": ["Classic Poutine", "Footlong Hotdog", "Pretzels", "Beer"] },
+      { "id": "c4", "name": "Halal FIFA Eats", "type": "Food", "cuisine": "Halal", "location": "Section 134", "menu": ["Chicken Gyro", "Falafel Wrap", "Hummus & Pita", "Baklava"] },
+      { "id": "c5", "name": "Green Pitch Greens", "type": "Food", "cuisine": "Vegetarian/Vegan", "location": "Section 142", "menu": ["Vegan Burger", "Quinoa Salad", "Fruit Cup", "Smoothies"] },
+      { "id": "c6", "name": "Kickoff Brews", "type": "Beverage", "cuisine": "Drinks", "location": "Section 108", "menu": ["Local Craft Beer", "Imported Beer", "Soda", "Water"] },
+      { "id": "c7", "name": "Championship Coffee & Desserts", "type": "Beverage", "cuisine": "Sweets", "location": "Section 128", "menu": ["Espresso", "Cappuccino", "Cookies", "Ice Cream"] }
+    ],
+    "restrooms": [
+      { "id": "r1", "type": "Men/Women/Family", "location": "Section 103" },
+      { "id": "r2", "type": "Men/Women/Family", "location": "Section 112" },
+      { "id": "r3", "type": "Men/Women/Family", "location": "Section 122" },
+      { "id": "r4", "type": "Men/Women/Family", "location": "Section 131" },
+      { "id": "r5", "type": "Men/Women/Family", "location": "Section 140" },
+      { "id": "r6", "type": "Men/Women/Family", "location": "Section 204" },
+      { "id": "r7", "type": "Men/Women/Family", "location": "Section 218" },
+      { "id": "r8", "type": "Men/Women/Family", "location": "Section 232" }
+    ],
+    "medical_points": [
+      { "id": "m1", "name": "First Aid Center East", "location": "Section 112", "contact": "+1-201-555-0112" },
+      { "id": "m2", "name": "First Aid Center West", "location": "Section 132", "contact": "+1-201-555-0132" },
+      { "id": "m3", "name": "First Aid Upper Deck", "location": "Section 220", "contact": "+1-201-555-0220" }
+    ]
+  }
+}
