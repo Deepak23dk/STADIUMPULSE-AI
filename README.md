@@ -55,16 +55,36 @@ Uses the Google Gemini API (`gemini-2.5-flash`) with Function Calling (Tools) to
 
 ---
 
-## ⚙️ Environment Variables
+## ⚙️ Environment & Deployment
 
-Create a `.env` file in the `backend/` folder:
+The codebase includes configuration files for local development and cloud hosting platforms.
 
-```env
-PORT=5000
-GEMINI_API_KEY=your_google_gemini_api_key_here
-```
+### Environment Variables
+Refer to the [.env.example](file:///.env.example) file in the root directory:
+* `PORT`: (Optional) The port the backend server listens on (defaults to `5000`).
+* `GEMINI_API_KEY`: The API key to connect to Google Gemini. If missing, the app defaults to a local rule-based system.
 
-*Note: If no `GEMINI_API_KEY` is provided, the backend automatically falls back to a highly robust local rule-based matching engine so that wayfinding, gate queues, concessions, and match scores still function end-to-end.*
+### 🚂 Deploying to Railway (Recommended)
+This repository is configured to deploy automatically on Railway using Nixpacks.
+1. Create a [Railway](https://railway.app) account and connect your GitHub repository.
+2. Select **New Project** → **Deploy from GitHub repo** → Choose `STADIUMPULSE-AI`.
+3. In the project dashboard, go to the **Variables** tab and add:
+   * `GEMINI_API_KEY` = *[Your actual Google Gemini key]*
+4. Nixpacks will auto-detect the root `package.json` (using [railway.json](file:///railway.json)), install all sub-dependencies, build the frontend statically, and launch the backend.
+5. Once deployed, Railway generates a public URL (found in the settings tab).
+
+### 🚀 Deploying to Render
+1. Create a [Render](https://render.com) account and connect your GitHub repository.
+2. Create a new **Web Service** and choose `STADIUMPULSE-AI`.
+3. Set the following details:
+   * **Runtime**: `Node`
+   * **Build Command**: `npm run build`
+   * **Start Command**: `npm start`
+4. Under **Advanced**, add the environment variable `GEMINI_API_KEY`.
+5. Trigger deploy.
+
+> [!NOTE]
+> **Free Tier Sleep/Cold Starts**: If you deploy on Render's free tier, the service will "sleep" after 15 minutes of inactivity. The first request after a sleep period can experience a 50-60 second "cold start" delay. On Railway, this behavior does not exist on developer/paid tiers, but on hobby plans, check current limits. If the page loads slowly on initial visit, please wait 1 minute for the container to wake up.
 
 ---
 
